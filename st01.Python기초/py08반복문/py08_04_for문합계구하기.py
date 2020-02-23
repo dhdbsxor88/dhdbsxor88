@@ -2,7 +2,7 @@
 # [ ] : 리스트, 리스트는 배열과 같음
 
 sum = 0
-for x in range (0, 10, 1) :
+for x in range(0, 10, 1):
     sum = sum + x
 
 print("sum = ", sum)
@@ -13,7 +13,7 @@ print("sum = ", sum)
 # 0부터 100까지 짝수의 합
 
 sum = 0
-for x in range (0, 102, 2) : 
+for x in range(0, 102, 2):
     sum = sum + x
 
 print("sum =", sum)
