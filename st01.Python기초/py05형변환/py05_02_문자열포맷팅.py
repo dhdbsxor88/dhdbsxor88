@@ -1,15 +1,17 @@
-# %s 문자열 혹은 임의의 객체를 문자열로 변환한다. 
-# %d 10진 정수로 변환한다. 
+# %s : 문자열 , %d : 10진 정수, %f : 10진 실수
 
 # 문자열 포매팅
-print("I eat %d apples." %3) 
+print( "I eat %d apples."%3 ) # 'I eat 3 apples.'
 
-day = "three"
-print("I was sick for %s days." %day)
+number=10
+day="three"
+print( "I ate %d apples. I was sick for %s days."%(number, day) )
 
-# 정렬과 공백 (자주 사용함)
-print("%10s" %"hi")    #10칸 띄고 입력
-print("%-10sjane" %"hi")  #입력하고 10칸
+# 'I ate 10 apples. so I was sick for three days.'
+# 정렬과 공백(사용 빈도 높음)
+print( "%10s" % "hi" )        # '        hi'
+print( "%-10sjane." % "hi" )  # 'hi        jane.'
 
 # 소수점 표현
-print("%0.4f"%3.42134234)  #소수점 4자리까지 표현
+print( "%0.4f" % 3.42134234 )  # '3.4213'
+print( "%10.4f" % 3.42134234 ) # '    3.4213'

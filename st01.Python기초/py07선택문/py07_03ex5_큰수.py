@@ -1,14 +1,19 @@
-x = input("x 값을 입력하시오")
-x = int(x)
 
-y = input("y 값을 입력하시오")
+x = input("정수를 입력하세요")
+y = input("정수를 입력하세요")
+
+x = int(x)
 y = int(y)
 
-if x > y:
-    print(x)
 
-elif x==y:
-    print("x와 y가 같습니다.")
-
+if x> y:
+    print(x, y) 
 else:
-    print(y)
+    print(y, x) 
+
+if x> y:
+    print(x, y) 
+elif x == y:
+    print(x, y)
+else:
+    print(y, x) 

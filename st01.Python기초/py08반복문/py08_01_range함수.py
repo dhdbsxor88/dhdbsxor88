@@ -17,5 +17,3 @@ print("range(0, 10, 2)", r3)
 # range(0, 10, 1)
 r4 = range(10, 0, -1)
 print("range(10, 0, -1)", r4)
-
-

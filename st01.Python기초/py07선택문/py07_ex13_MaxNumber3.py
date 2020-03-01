@@ -1,42 +1,27 @@
-a = input("첫번째수를 입력하세요.")
-b = input("두번째수를 입력하세요.")
-c = input("세번째수를 입력하세요.")
 
-a = int(a)
-b = int(b)
-c = int(c)
+x = 1
+y = 4
+z = 5
 
-if a>b:
-    if a>c:
-        print(a)
+# 중첩 if 방식
+if x > y:
+    # x 와 z 를 비교
+    if x > z:
+        print(x)
     else:
-        print(c)
+        print(z)
 
-if a<b:
-    if b>c:
-        print(b)
+else:
+    # y 와 z 를 비교
+    if y > z:
+        print(y)
     else:
-        print(c)
+        print(z)
 
-print("입력하신 세 숫자 중 위 숫자가 가장 큰 수 입니다")
-
-
-a = input("첫번째수를 입력하세요.")
-b = input("두번째수를 입력하세요.")
-c = input("세번째수를 입력하세요.")
-
-a = int(a)
-b = int(b)
-c = int(c)
-
-if a>b and a>c : 
-    print(a)
-
-elif b>a and b>c :
-    print(b)
-
-else : 
-    print(c)
-
-print("입력하신 세 숫자 중 위 숫자가 가장 큰 수 입니다")
-
+# 연속 if 방식
+if x > y and x > z:
+    print(x)
+elif y > z:
+    print(y)
+else:
+    print(z)

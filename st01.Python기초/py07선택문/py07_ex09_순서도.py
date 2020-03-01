@@ -1,14 +1,18 @@
-A = input("A값을 입력하시오 :")
-A = int(A)
 
-B = input("B값을 입력하시오 :")
-B = int(B)
+a = input("정수 입력") # 
+b = input("정수 입력") # 
 
-avg = (A+B) / 2
+# 문자열에 *, + 연산자가 있다.
+# 문자열에는 / 연산자가 없다. 
+try:
+    a = int(a)
+    b = int(b)
+    avg = (a+b) / 2
+except ValueError:
+    pass
 
 if avg >= 160 :
-    print ("합격")
-
-else :
+    print("합격")
+else:
     print("불합격")
-    
+

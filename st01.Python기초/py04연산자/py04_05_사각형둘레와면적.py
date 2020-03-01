@@ -1,13 +1,16 @@
-# 내가 쓴 사각형 둘레 코드 (정답!!!)
+# py04_05_사각형둘레와면적.py
 
-w = float(input("넓이를 입력하시오"))
-h = float(input("높이를 입력하시오"))
+w = input("너비 값을 입력하시오 >> ") # 문자열
+h = input("높이 값을 입력하시오 >> ") # 문자열
 
-넓이 = w*h
-둘레 = 2*(w+h)
+try:
+    w = float( w ) # 실수로 형변환 
+    h = float( h ) # 실수로 형변환 
+except ValueError:
+    pass
 
-print("넓이", 넓이)
-print("둘레", 둘레)
+area = w  * h
+perimeter = 2 * (w + h)
 
-
-
+print( "사각형의 넓이:", area)
+print( "사각형의 둘레:", perimeter)

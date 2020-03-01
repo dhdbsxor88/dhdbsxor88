@@ -1,14 +1,10 @@
-def get_sum(z, y):
-    sum = 0
+from math import *
 
-    for x in range(z, y, 1):
-        sum = sum + x
+time1 = 10/20
+height = sqrt(3**2+4**2)
+time2 = height/10
+time3 = height/30
+time4 = 8/20
+total = time1+time2+time3+time4
 
-    print(sum)
-
-    return sum
-
-
-a = 3
-b = 7
-get_sum(a, b)
+print(total)

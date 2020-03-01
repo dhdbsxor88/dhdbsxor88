@@ -1,11 +1,10 @@
-# py04_01_산술연산
-t = 7/4
-print(t) 
+# py04_01_산술연산자
 
-t = 7//4
-print(t)
+t = 7 / 4
+print( t ) # 1.75
+
+t = 7 // 4
+print( t ) # 1
 
 t = 7%4
-print(t)
-
-import math
+print( t ) # 3
